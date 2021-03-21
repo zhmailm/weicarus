@@ -15,18 +15,15 @@
             <#if settings.sidebar_links!true>
                 <#include "../widget/links.ftl">
             </#if>
-            <#if isShowMenu == 'menuShow'>
-                <#include "../widget/menu_tag.ftl">
-                <#include "../plugin/show-mobile-menu.ftl">
-                <div id="catalog-over-box" ></div>
-            </#if>
+            <#if settings.sidebar_tags!true>
+            <#include "../widget/tag.ftl">
+        	</#if>
 		</#if>
     </#if>
     <#if position == 'right'>
-      	<#-- if settings.sidebar_profile!true>
+      	<#if settings.sidebar_profile!true>
             <#include "../widget/profile.ftl">
         </#if>
-          -->
         <#if settings.sidebar_recentpost!true>
             <#include "../widget/recent_posts.ftl">
         </#if>
@@ -34,9 +31,6 @@
             <#include "../widget/recent_comments.ftl">
         </#if>
 		<#--<#include "../widget/archive.ftl">-->
-        <#if settings.sidebar_tags!true>
-            <#include "../widget/tag.ftl">
-        </#if>
     </#if>
     <#if position == 'left' && isShowMenu != 'urlNavMenuShow'>
         <div class="column-right-shadow is-hidden-widescreen">
@@ -47,9 +41,6 @@
                 <#include "../widget/recent_comments.ftl">
             </#if>
 			<#--<#include "../widget/archive.ftl">-->
-            <#if settings.sidebar_tags!true>
-                <#include "../widget/tag.ftl">
-            </#if>
         </div>
     </#if>
 
