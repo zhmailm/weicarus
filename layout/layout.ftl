@@ -93,7 +93,7 @@
                 <#elseif type == "categories">
                   	<@widget 'left','menuHide'/>
                 <#elseif type == "archives">
-                  	<@widget 'right','no'/>
+                  	<@widget 'left','menuHide'/>
                 <#elseif type == "category">
                   	<@widget 'left','menuHide'/>
                 <#else>

@@ -27,6 +27,7 @@
 				</#if>
 			</@menuTag>
 			<div class="navbar-end">
+              	${settings.links_top!}
               	<form method="get" action="/search" >
                   <div class="navbar-item">
                 	<input type="text" name="keyword"  class="navbar-item" placeholder="请输入关键字">&nbsp;&nbsp;搜索</input>
