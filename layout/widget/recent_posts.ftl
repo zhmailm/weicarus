@@ -8,7 +8,7 @@
                 <article class="media">
                     <#if post.thumbnail?? && post.thumbnail!=''>
                         <a href="${post.fullPath!}" class="media-left">
-                            <p class="image is-55x55">
+                            <p class="card-image">
                                 <img class="thumbnail" src="${post.thumbnail!}" alt="${post.title!}">
                             </p>
                         </a>

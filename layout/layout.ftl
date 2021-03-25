@@ -77,9 +77,9 @@
               	<#if type == "index">
                   	<div class="column is-8-tablet is-8-desktop is-7-widescreen has-order-2 column-main">
                 <#elseif type == "journals">
-					<div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main">
+					<div class="column is-8-tablet is-8-desktop is-10-widescreen has-order-2 column-main">
                 <#else>
-					<div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main">
+					<div class="column is-8-tablet is-8-desktop is-10-widescreen has-order-2 column-main">
                 </#if>
                 	<#nested />
                 </div>
